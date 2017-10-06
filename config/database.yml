@@ -22,6 +22,8 @@ test:
   database: db/test.sqlite3
 
 production:
+  user: postgres
+  database: alpha_blog
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
